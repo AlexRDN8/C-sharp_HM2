@@ -5,12 +5,28 @@
 // 7 -> да
 // 1 -> нет
 
+// ! Сначала неправильно понял условия, подумал, что день недели нужно вывести, код закоментировал, чтобы себе на будущее оставить.
+// Console.WriteLine("Введите число соответствующее дню недели: ");
+// string [] days = {"понедельник","вторник","среда","четверг","пятница","суббота","воскресенье"}; 
+// int num = int.Parse (Console.ReadLine());
+// if (num >=1 & num<=7)
+// {
+//     Console.WriteLine($"Число {num} соответствует дню недели - {days[num-1]}");
+// }
+// else
+// {
+//     Console.WriteLine("Нужно ввести число от 1 до 7");
+// }
+
 Console.WriteLine("Введите число соответствующее дню недели: ");
-string [] days = {"понедельник","вторник","среда","четверг","пятница","суббота","воскресенье"}; 
-int num = int.Parse (Console.ReadLine());
-if (num >=1 & num<=7)
+int num = int.Parse(Console.ReadLine());
+if (num == 6 | num == 7)
 {
-    Console.WriteLine($"Число {num} соответствует дню недели - {days[num-1]}");
+    Console.WriteLine("Да");
+}
+else if (num == 1 | num == 2 | num == 3 | num == 4 | num == 5)
+{
+    Console.WriteLine("Нет");
 }
 else
 {
